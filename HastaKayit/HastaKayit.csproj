@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{495CABBE-A894-4A17-82A2-9D744FB75AA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_2021_01_21HastaKayitEbruGozmen</RootNamespace>
+    <AssemblyName>2021-01-21HastaKayitEbruGozmen</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Basvuru.cs" />
+    <Compile Include="Classes\Base.cs" />
+    <Compile Include="Classes\Doktor.cs" />
+    <Compile Include="Classes\Klinik.cs" />
+    <Compile Include="Classes\LaboratuvarTetkik.cs" />
+    <Compile Include="Classes\Lists.cs" />
+    <Compile Include="Classes\Muayene.cs" />
+    <Compile Include="Classes\Tani.cs" />
+    <Compile Include="Classes\Islem.cs" />
+    <Compile Include="Enums\EnumUzmanlikDurumu.cs" />
+    <Compile Include="Forms\FrmHasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHasta.Designer.cs">
+      <DependentUpon>FrmHasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBase.Designer.cs">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDoktor.Designer.cs">
+      <DependentUpon>FrmDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmBasvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBasvuru.Designer.cs">
+      <DependentUpon>FrmBasvuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMuayene.Designer.cs">
+      <DependentUpon>FrmMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmIslem.Designer.cs">
+      <DependentUpon>FrmIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLaboratuvarTetkik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLaboratuvarTetkik.Designer.cs">
+      <DependentUpon>FrmLaboratuvarTetkik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmTani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTani.Designer.cs">
+      <DependentUpon>FrmTani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmKlinik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmKlinik.Designer.cs">
+      <DependentUpon>FrmKlinik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\EnumBrans.cs" />
+    <Compile Include="Enums\EnumCalismaDurumu.cs" />
+    <Compile Include="Enums\EnumCinsiyet.cs" />
+    <Compile Include="Enums\EnumKanGrubu.cs" />
+    <Compile Include="Enums\EnumMuayeneTuru.cs" />
+    <Compile Include="Enums\EnumSgkDurumu.cs" />
+    <Compile Include="Enums\EnumTedaviTuru.cs" />
+    <Compile Include="Classes\Hasta.cs" />
+    <Compile Include="Classes\Kisi.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Interfaces\IText.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmHasta.resx">
+      <DependentUpon>FrmHasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDoktor.resx">
+      <DependentUpon>FrmDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBasvuru.resx">
+      <DependentUpon>FrmBasvuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMuayene.resx">
+      <DependentUpon>FrmMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmIslem.resx">
+      <DependentUpon>FrmIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLaboratuvarTetkik.resx">
+      <DependentUpon>FrmLaboratuvarTetkik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTani.resx">
+      <DependentUpon>FrmTani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmKlinik.resx">
+      <DependentUpon>FrmKlinik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
